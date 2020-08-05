@@ -12,61 +12,79 @@ class AppAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
-        'frontend/assets/css/style.css',
-        'frontend/assets/css/main-color.css',
-        'frontend/assets/css/bootstrap-grid.css',
-        'frontend/assets/css/icons.css',
-        'frontend/assets/css/invoice.css',
+        'css/style.css',
+        'css/main-color.css',
+        'bootstrap-grid.css',
+        'icons.css',
+        '/invoice.css',
         
         
         //plugins
-        'frontend/assets/css/plugins/revolutionslider.css',
+        'css/plugins/revolutionslider.css',
         //'css/site.css',
         
     ];
     public $js = [
-        'frontend/assets/scripts/chosen.min.js',
-        'frontend/assets/scripts/counterup.min.js',
-        'frontend/assets/scripts/custom.js',
-        'frontend/assets/scripts/daterangepicker.js',
-        'frontend/assets/scripts/dropzone.js',
-        'frontend/assets/scripts/infobox.min.js',
-        'frontend/assets/scripts/isotope.min.js',
-        'frontend/assets/scripts/jquery.countdown.min.js',
-        'frontend/assets/scripts/jquery-3.4.1.min.js',
-        'frontend/assets/scripts/jquery-migrate-3.1.0.min.js',
-        'frontend/assets/scripts/jquery-ui.min.js',
-        'frontend/assets/scripts/leaflet.min.js',
-        'frontend/assets/scripts/leaflet-autocomplete.js',
-        'frontend/assets/scripts/leaflet-control-geocoder.js',
-        'frontend/assets/scripts/leaflet-gesture-handling.min.js',
-        'frontend/assets/scripts/leaflet-listeo.js',
-        'frontend/assets/scripts/leaflet-markercluster.min.js',
-        'frontend/assets/scripts/magnific-popup.min.js',
-        'frontend/assets/scripts/maps.js',
-        'frontend/assets/scripts/markerclusterer.js',
-        'frontend/assets/scripts/mmenu.min.js',
-        'frontend/assets/scripts/moment.min.js',
-        'frontend/assets/scripts/quantityButtons.js',
-        'frontend/assets/scripts/rangeslider.min.js',
-        'frontend/assets/scripts/slick.min.js',
-        'frontend/assets/scripts/switcher.js',
-        'frontend/assets/scripts/themepunch.revolution.min.js',
-        'frontend/assets/scripts/themepunch.tools.min.js',
-        'frontend/assets/scripts/tooltips.min.js',
-        'frontend/assets/scripts/typed.js',
-        'frontend/assets/scripts/waypoints.min.js',
+        'https://maps.googleapis.com/maps/api/js?key=AIzaSyAaoOT9ioUE4SA8h-anaFyU4K63a7H-7bc&amp;libraries=places&amp;callback=initAutocomplete',
+        '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js',
+        'scripts/jquery-3.4.1.min.js',
+        'scripts/jquery-migrate-3.1.0.min.js',
+        'scripts/mmenu.min.js',
+        'scripts/chosen.min.js',
+        'scripts/slick.min.js',
+        'scripts/rangeslider.min.js',
+        'scripts/magnific-popup.min.js',
+        'scripts/waypoints.min.js',
+        'scripts/counterup.min.js',
+        'scripts/jquery-ui.min.js',
+        'scripts/tooltips.min.js',
+        'scripts/custom.js',
+        
+        //Leaflet Js
+        'scripts/leaflet.min.js',
+        
+        // Leaflet Maps Scripts 
+        'scripts/leaflet-markercluster.min.js',
+        'scripts/leaflet-gesture-handling.min.js',
+        'scripts/leaflet-listeo.js',
+        
+        //Leaflet Geocoder + Search Autocomplete // Docs: https://github.com/perliedman/leaflet-control-geocoder 
+        'scripts/leaflet-autocomplete.js',
+        'scripts/leaflet-control-geocoder.js',
+        
+        //Typed Script
+        'scripts/typed.js',
+        
+        //Style Switcher
+        'scripts/switcher.js',
+        
+        'scripts/daterangepicker.js',
+        'scripts/dropzone.js',
+        'scripts/infobox.min.js',
+        'scripts/isotope.min.js',
+        'scripts/jquery.countdown.min.js',
+       
+        'scripts/maps.js',
+        'scripts/markerclusterer.js',
+        'scripts/moment.min.js',
+        'scripts/quantityButtons.js',
+
+        //Slider Js
+        'scripts/themepunch.revolution.min.js',
+        'scripts/themepunch.tools.min.js',
+        
+        
         
         //Extensions
-        'frontend/assets/scripts/extensions/revolution.extension.actions.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.carousel.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.kenburn.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.layeranimation.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.migration.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.navigation.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.parallax.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.slideanims.min.js',
-        'frontend/assets/scripts/extensions/revolution.extension.video.min.js',
+        'scripts/extensions/revolution.extension.actions.min.js',
+        'scripts/extensions/revolution.extension.carousel.min.js',
+        'scripts/extensions/revolution.extension.kenburn.min.js',
+        'scripts/extensions/revolution.extension.layeranimation.min.js',
+        'scripts/extensions/revolution.extension.migration.min.js',
+        'scripts/extensions/revolution.extension.navigation.min.js',
+        'scripts/extensions/revolution.extension.parallax.min.js',
+        'scripts/extensions/revolution.extension.slideanims.min.js',
+        'scripts/extensions/revolution.extension.video.min.js',
         
         
     ];

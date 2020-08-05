@@ -76,7 +76,32 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+    
+    public function actionAirbnb()
+    {
+        return $this->render('index-2-airbnb');
+    }
 
+    public function actionIndex3()
+    {
+        $this->layout = 'main2';
+        return $this->render('index-3');
+    }
+    public function actionIndex4()
+    {
+        $this->layout = 'main2';
+        return $this->render('index-4');
+    }
+    public function actionIndex5()
+    {
+        $this->layout = 'main2';
+        return $this->render('index-5');
+    }
+    public function actionIndex6()
+    {
+        $this->layout = 'main2';
+        return $this->render('index-6');
+    }
     /**
      * Logs in a user.
      *
