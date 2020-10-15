@@ -20,7 +20,7 @@
 	<!-- Header -->
 	<div class="row">
 		<div class="col-md-6">
-			<div id="logo"><img src="images/logo.png" alt=""></div>
+			<div id="logo"><img src="<?= Yii::$app->request->baseUrl ?>/images/logo.png" alt=""></div>
 		</div>
 
 		<div class="col-md-6">	

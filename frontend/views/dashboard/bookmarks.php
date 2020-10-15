@@ -31,7 +31,7 @@
 
 						<li>
 							<div class="list-box-listing">
-								<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-02.jpg" alt=""></a></div>
+								<div class="list-box-listing-img"><a href="#"><img src="<?= Yii::$app->request->baseUrl ?>/images/listing-item-02.jpg" alt=""></a></div>
 								<div class="list-box-listing-content">
 									<div class="inner">
 										<h3>Sticky Band</h3>
@@ -49,7 +49,7 @@
 
 						<li>
 							<div class="list-box-listing">
-								<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-04.jpg" alt=""></a></div>
+								<div class="list-box-listing-img"><a href="#"><img src="<?= Yii::$app->request->baseUrl ?>/images/listing-item-04.jpg" alt=""></a></div>
 								<div class="list-box-listing-content">
 									<div class="inner">
 										<h3>Burger House</h3>
@@ -67,7 +67,7 @@
 
 						<li>
 							<div class="list-box-listing">
-								<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-06.jpg" alt=""></a></div>
+								<div class="list-box-listing-img"><a href="#"><img src="<?= Yii::$app->request->baseUrl ?>/images/listing-item-06.jpg" alt=""></a></div>
 								<div class="list-box-listing-content">
 									<div class="inner">
 										<h3>Think Coffee</h3>

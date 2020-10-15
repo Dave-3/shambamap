@@ -23,7 +23,7 @@ AppAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="transparent-header ">
+<body class="transparent-header">
 <!-- Wrapper -->
 <div id="wrapper">
 <?php $this->beginBody() ?>
@@ -40,7 +40,7 @@ AppAsset::register($this);
 	<div class="container">
 		<div class="row">
 			<div class="col-md-5 col-sm-6">
-				<img class="footer-logo" src="images/logo.png" alt="">
+				<img class="footer-logo" src="<?= Yii::$app->request->baseUrl ?>/images/logo.png" alt="">
 				<br><br>
 				<p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
 			</div>
@@ -128,6 +128,34 @@ AppAsset::register($this);
 <?php $this->endBody() ?>
 </div>
 <!-- Wrapper / End -->
+
+<!-- Google Autocomplete -->
+<script>
+  function initAutocomplete() {
+    var input = document.getElementById('autocomplete-input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+
+    autocomplete.addListener('place_changed', function() {
+      var place = autocomplete.getPlace();
+      if (!place.geometry) {
+        window.alert("No details available for input: '" + place.name + "'");
+        return;
+      }
+    });
+
+	if ($('.main-search-input-item')[0]) {
+	    setTimeout(function(){ 
+	        $(".pac-container").prependTo("#autocomplete-container");
+	    }, 300);
+	}
+}
+</script>
+
+<!-- Maps -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnULnIcTW4J_9NxGeHhLSVLme6Ba36AE&amp;libraries=places&amp;callback=initAutocomplete"></script>
+<script type="text/javascript" src="<?= Yii::$app->request->baseUrl ?>/scripts/infobox.min.js"></script>
+<script type="text/javascript" src="<?= Yii::$app->request->baseUrl ?>/theme/scripts/markerclusterer.js"></script>
+<script type="text/javascript" src="<?= Yii::$app->request->baseUrl ?>/theme/scripts/maps.js"></script>
 </body>
 </html>
 <?php $this->endPage() ?>

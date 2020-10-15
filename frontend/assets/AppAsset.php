@@ -25,8 +25,6 @@ class AppAsset extends AssetBundle
         
     ];
     public $js = [
-        'https://maps.googleapis.com/maps/api/js?key=AIzaSyAaoOT9ioUE4SA8h-anaFyU4K63a7H-7bc&amp;libraries=places&amp;callback=initAutocomplete',
-        '../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js',
         'scripts/jquery-3.4.1.min.js',
         'scripts/jquery-migrate-3.1.0.min.js',
         'scripts/mmenu.min.js',
@@ -60,12 +58,12 @@ class AppAsset extends AssetBundle
         
         'scripts/daterangepicker.js',
         'scripts/dropzone.js',
-        'scripts/infobox.min.js',
+        //'scripts/infobox.min.js',
         'scripts/isotope.min.js',
         'scripts/jquery.countdown.min.js',
        
-        'scripts/maps.js',
-        'scripts/markerclusterer.js',
+        //'scripts/maps.js',
+        //'scripts/markerclusterer.js',
         'scripts/moment.min.js',
         'scripts/quantityButtons.js',
 
@@ -89,7 +87,7 @@ class AppAsset extends AssetBundle
         
     ];
     public $depends = [
-        //'yii\web\YiiAsset',
+        'yii\web\YiiAsset',
         //'yii\bootstrap\BootstrapAsset',
     ];
 }

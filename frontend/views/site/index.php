@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Venues';
 ?>
 <!-- Banner
 ================================================== -->
@@ -492,35 +492,9 @@ $this->title = 'My Yii Application';
 			</div>
 
 		</div>
-
 	</div>
 </section>
 <!-- Recent Blog Posts / End -->
 
-
-
-
 <!-- Back To Top Button -->
 <div id="backtotop"><a href="#"></a></div>
-
-
-
-
-
-<script>
-var typed = new Typed('.typed-words', {
-strings: ["Attractions"," Restaurants"," Hotels"],
-	typeSpeed: 80,
-	backSpeed: 80,
-	backDelay: 4000,
-	startDelay: 1000,
-	loop: true,
-	showCursor: true
-});
-</script>
-
-
-
-
-
-

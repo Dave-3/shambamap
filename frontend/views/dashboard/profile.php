@@ -31,7 +31,7 @@
 						
 						<!-- Avatar -->
 						<div class="edit-profile-photo">
-							<img src="images/user-avatar.jpg" alt="">
+							<img src="<?= Yii::$app->request->baseUrl ?>/images/user-avatar.jpg" alt="">
 							<div class="change-photo-btn">
 								<div class="photoUpload">
 								    <span><i class="fa fa-upload"></i> Upload Photo</span>

@@ -33,17 +33,8 @@ var infoBox_ratingType = 'star-rating';
 
       // Locations
       var locations = [
-        [ locationData('listings-single-page.html','images/listing-item-01.jpg',"Tom's Restaurant",'964 School Street, New York', '3.5', '12'), 40.94401669296697, -74.16938781738281, 1, '<i class="im im-icon-Chef-Hat"></i>'],
-        [ locationData('listings-single-page.html','images/listing-item-02.jpg','Sticky Band','Bishop Avenue, New York', '5.0', '23'), 40.77055783505125, -74.26002502441406,          2, '<i class="im im-icon-Electric-Guitar"></i>'],
-        [ locationData('listings-single-page.html','images/listing-item-03.jpg','Hotel Govendor','778 Country Street, New York', '2.0', '17'), 40.7427837, -73.11445617675781,         3, '<i class="im im-icon-Home-2"></i>' ],
-        [ locationData('listings-single-page.html','images/listing-item-04.jpg','Burger House','2726 Shinn Street, New York', '5.0', '31'), 40.70437865245596, -73.98674011230469,     4, '<i class="im im-icon-Hamburger"></i>' ],
-        [ locationData('listings-single-page.html','images/listing-item-05.jpg','Airport','1512 Duncan Avenue, New York', '3.5', '46'), 40.641311, -73.778139,                         5, '<i class="im im-icon-Plane"></i>'],
-        [ locationData('listings-single-page.html','images/listing-item-06.jpg','Think Coffee','215 Terry Lane, New York', '4.5', '15'), 41.080938, -73.535957,                        6, '<i class="im im-icon-Coffee"></i>'],
-        [ locationData('listings-single-page.html','images/listing-item-04.jpg','Burger House','2726 Shinn Street, New York', '5.0', '31'), 41.079386, -73.519478,                     7, '<i class="im im-icon-Hamburger"></i>'],
-
-        [ locationData('listings-single-page.html','images/listing-item-04.jpg','Burger House','2726 Shinn Street, New York', '5.0', '31'), 52.368630, 4.895782,                     7, '<i class="im im-icon-Hamburger"></i>'],
-        [ locationData('listings-single-page.html','images/listing-item-04.jpg','Burger House','2726 Shinn Street, New York', '5.0', '31'), 52.350179, 4.634857,                     7, '<i class="im im-icon-Hamburger"></i>'],
-      ];
+        [ locationData('listings-single-page.html','images/listing-item-01.jpg',"Castle Forest lodge",'Kirinyanga Mt Kenya', '3.5', '12'), -0.3806918,37.3099297, 1, '<i class="im im-icon-Chef-Hat"></i>'],
+       ];
 
       // Chosen Rating Type
       google.maps.event.addListener(ib,'domready',function(){
@@ -66,7 +57,7 @@ var infoBox_ratingType = 'star-rating';
       if (typeof mapZoomAttr !== typeof undefined && mapZoomAttr !== false) {
           var zoomLevel = parseInt(mapZoomAttr);
       } else {
-          var zoomLevel = 5;
+          var zoomLevel = 10;
       }
 
       if (typeof mapScrollAttr !== typeof undefined && mapScrollAttr !== false) {
@@ -80,7 +71,7 @@ var infoBox_ratingType = 'star-rating';
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: zoomLevel,
         scrollwheel: scrollEnabled,
-        center: new google.maps.LatLng(40.80, -73.70),
+        center: new google.maps.LatLng(0.0483656,37.6347827),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         zoomControl: false,
         mapTypeControl: false,
